@@ -22,7 +22,6 @@ class Counter extends React.Component{
 
     componentDidMount(){
         console.log('5、父组件挂载完成.');
-
         // 此时页面中有了真正的DOM的元素，可以进行DOM相关的操作
     }
 
@@ -46,9 +45,8 @@ class Counter extends React.Component{
             number: this.state.number + 1
         })
     };
-
+    
     render(){
-        console.log('4、render(父组件挂载)');
         return (
             <div>
                 <p>{this.state.number}</p>

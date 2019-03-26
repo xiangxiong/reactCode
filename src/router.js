@@ -1,13 +1,13 @@
 import React from 'react';
-import {Router,Route,hashHistory} from 'react-router';
+import {BrowserRouter as Router,Route,Link} from "react-router-dom"
 import Header from './components/home/index';
-import Counter from './components/couter/counter';
 
 const Routes = () =>{
     return (
-        <Router path="/" history={hashHistory}>
-            <Route path="/" component={Counter}/>
+        <Router>
+            <Route path="/" component={Header}/>
       </Router>
     )
 }
+
 export default Routes;
